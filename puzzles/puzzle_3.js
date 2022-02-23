@@ -12,7 +12,8 @@ const puzzleCode = [
 
 // Enter your solution here
 const solution = {
-  data: "0x",
+  data: ethers.utils.hexZeroPad("0xA", 32),
+  // data: "0x0A",
   value: 0
 }
 
