@@ -12,10 +12,14 @@ const puzzleCode = [
   '5b',   // JUMPDEST
 ].join('')
 
+//TODO 
+
 // Enter your solution here
 const solution = {
-  data: "0x",
+  data: ethers.utils.hexZeroPad("0x0", 32),
   value: 0
 }
+
+console.log(solution["data"])
 
 setup(puzzleCode, solution)

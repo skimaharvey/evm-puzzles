@@ -3,7 +3,7 @@ async function setup(puzzleCode, { data, value }) {
 
   const address = "0xffffffffffffffffffffffffffffffffffffffff";
 
-  await hre.network.provider.send("hardhat_setCode", [address, `0x${puzzleCode}`]);
+  const contract = await hre.network.provider.send("hardhat_setCode", [address, `0x${puzzleCode}`]);
 
   data = data.startsWith("0x") ? data : `0x${data}`
 
