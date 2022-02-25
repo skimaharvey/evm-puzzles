@@ -16,10 +16,9 @@ const puzzleCode = [
 
 // Enter your solution here
 const solution = {
-  data: ethers.utils.hexZeroPad("0x0", 32),
+  data: ethers.utils.hexZeroPad("0x1", 32),
+  // data: "0x0000000000000000000000000000000000000000000000000000000000000000",
   value: 0
 }
-
-console.log(solution["data"])
 
 setup(puzzleCode, solution)

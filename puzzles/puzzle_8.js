@@ -1,7 +1,7 @@
 const { setup } = require("./setup");
 
 const puzzleCode = [
-  '38',     // CODESIZE
+  '38',     // CODESIZE = 26
   '34',     // CALLVALUE
   '90',     // SWAP1
   '11',     // GT
@@ -25,8 +25,8 @@ const puzzleCode = [
 
 // Enter your solution here
 const solution = {
-  data: "0x",
-  value: 0
+  data: "0x000001",
+  value: 15
 }
 
 setup(puzzleCode, solution)
